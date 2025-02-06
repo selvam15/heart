@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="images/user.png" type="png" rel="website icon">
+    <link rel="icon" href="https://wallpapercave.com/wp/wp2968502.jpg">
+<title>My Account</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/originals/0b/9a/56/0b9a569deef6839153414ac47cc4e442.gif');
+    background-color: rgb(255, 255, 255);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: transparent;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 300px;
+    backdrop-filter: blur(90px);
+    margin-left: 500px;
+}
+
+.container h2 {
+    text-align: center;
+    color: rgb(73, 135, 252);
+    text-shadow: black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(73, 135, 252);
+}
+
+.form-group input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #0f7bff;
+    margin-top: 10px;
+}
+
+.form-group input:hover {
+    transform: scale(1.05);
+}
+
+.form-group input[type="submit"] {
+    background-color: transparent;
+    color: rgb(73, 135, 252);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: rgb(156, 207, 255);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+a {
+    color: rgb(73, 135, 252);
+}
+
+.form-group input::placeholder {
+    color: rgb(73, 135, 252);
+}
+.Sign-Up {
+        text-align: end;
+    }
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .Sign-Up {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        box-shadow: none;
+        backdrop-filter: blur(10px);
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .Sign-Up{
+        margin-left: 180px;
+    }
+    .form-group input{
+        width: 250px;
+    }
+    .form-group .Login{
+        margin-left: -25px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+        <div class="container">
+            <h2>Login </h2>
+            <div class="Sign-Up">
+                <a href='#' style="text-decoration: none;"> Sign-Up <i class='bx bxs-edit-alt'></i></a>
+            </div>
+            <br>
+            <form action='index.html' method="submit">
+                <div class="form-group">
+                    <label for="username"><i class='bx bxs-user'></i> Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter Your Name" style="background-color: transparent;">
+                </div>
+                <div class="form-group">
+                    <label for="Gmailid"><i class='bx bxl-gmail'></i> Gmailid</label>
+                    <input type="text" id="Gmailid" name="Gmailid" required placeholder="Enter Your Id" style="background-color: transparent;color: #f0f0f0;">
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class='bx bxs-key'></i> Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter Password" style="background-color: transparent;">
+                </div>
+                <div class="form-group">
+                    <br>
+                    <div class="Login">
+                    <input type="submit" value="Login" style="width: 150px; margin-left: 80px;">
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    <a href="" style="text-decoration: none;"> Forgot-Password ?</a>
+                </div>
+            </form>
+           
+        </div>
+</body>
+</html> 
+
+

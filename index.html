@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://www.Heartsync.com.in/</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="icon" href="https://wallpapercave.com/wp/wp2968502.jpg">
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><span>Heart Sync</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#predict" class="menu-btn">Predict</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#teams" class="menu-btn">Hospitals</a></li>
+                <li><a href="signup.html" class="menu-btn">Login</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1"></div>
+                <div class="text-2"><i>Here You can</i></div>
+                <div class="text-3">Predict <span class="typing"></span></div>
+                <a href="#predict">PREDICT</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="https://wallpapercave.com/wp/wp8593774.png" alt="Selvam">
+                </div>
+                <div class="column right">
+                    <div class="text">Here You Can Predict <span class="typing-2"></span></div>
+                    <p>
+                        Heart disease prediction using machine learning involves developing models that analyze various health-related factors to estimate an individual's risk of developing heart disease. By collecting data on factors like age, blood pressure, cholesterol levels, and lifestyle habits, machine learning algorithms can learn patterns and associations that indicate increased risk. These models undergo training, evaluation, and fine-tuning processes to ensure accuracy and reliability. Once deployed, they offer a valuable tool for healthcare professionals to assess and manage cardiovascular health, potentially leading to early intervention and improved patient outcomes. However, collaboration between data scientists and healthcare experts is crucial to ensure ethical and responsible use of these predictive models in clinical settings.</p><a href="#predict" >Predict</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="predict" id="predict">
+        <div class="max-width">
+            <div class="predict-con">
+            <h2 class="title" style="color: azure;">Prediction</h2>
+            <div class="container">
+                <form action="/predict" method="POST" id="contact-form">
+                    <div class="er">
+                    <label for="AGE" style="color:white; font-weight: bold;text-shadow:1px 0px 2px black, 1px 0px 3px white;">AGE : </label>
+                    <input type="number" name="age" id="age" required placeholder="Enter Your Age" min="1" max="100" step="1" style="margin-right: 30px;margin-left: 5px;" onclick="showAlert()"/>
+                    
+                    <label for="SEX" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">SEX : </label>
+                    <input type="number" name="sex" required placeholder="Enter Your Sex" min="0" max="1" step="1" style="margin-right: 40px;margin-left: 5px;"/>
+            
+                    <label for="CP" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">CP :</label>
+                    <input type="number" name="cp" required placeholder="Enter Your Cp" min="0" max="3" step="1" style="margin-left: 5px;">
+                    <br>
+                    </div>
+                    <br>
+                    <div class="er1">
+                    <label for="RESTING BP" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black, 1px 0px 3px white;">RESTING BP :</label>
+                    <input type="number" name="trestbps" required placeholder="Enter Your Resting BP" min="60" max="150" step="1" style="margin-right: 25px;margin-left: 5px;">
+                    
+                    <label for="CHOLESTEROL" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">CHOLESTEROL :</label>
+                    <input type="number" name="chol" required placeholder="Enter Your Cholesterol" min="130" max="450" step="1" style="margin-right: 25px;margin-left: 5px;">
+                    <br>
+                    <label for="FBS" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;margin-right: 10px;">FBS :</label>
+                    <input type="number" name="fbs" required placeholder="Enter Your Fbs" min="0" max="1" step="1" style="margin-right: 5px;margin-left: 5px;">
+               
+                    <label for="REST ECG" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">REST ECG :</label>
+                    <input type="number" name="restecg" required placeholder="Enter Your Rest Ecg" min="0" max="2" step="1" style="margin-left: 5px;">
+                    </div>
+                    <br>
+                    <div class="er2">
+                    <label for="MAX HEART RATE" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">MAX HEART RATE :</label>
+                    <input type="number" name="thalach" required placeholder="Enter Your Max Heart Rate" min="60" max="300" step="1" style="margin-right: 30px;margin-left: 5px;">
+                    
+                    <label for="EXANG" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">EXANG :</label>
+                    <input type="number" name="exang" required placeholder="Enter Your Exang" min="0" max="1" step="1" style="margin-right: 30px;margin-left: 5px;">
+
+                    <label for="OLD PEAK" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">OLD PEAK :</label>
+                    <input type="number" name="oldpeak" required placeholder="Enter Your Old Peak" min="0.0" max="5.0" step="1" style="margin-left: 5px;">
+                    </div>
+                    <br>
+                    <div class="er2">
+                    <label for="SLOPE" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">SLOPE :</label>
+                    <input type="number" name="slope" required placeholder="Enter Your Slope" min="0" max="2" step="1" style="margin-right: 30px;margin-left: 5px;">
+                    
+                    <label for="CA" style="color:white;font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white; ">BLOOD FLOW :</label>
+                    <input type="number" name="ca" required placeholder="Enter Your Ca" min="0" max="3" step="1" style="margin-right: 30px;margin-left: 5px;">
+                    
+                    <label for="THAL" id="thal" style="color: white; font-weight: bold; text-shadow: 1px 0px 2px black, 1px 0px 3px white;">THAL :</label>
+                    <input type="number" name="thal" required placeholder="Enter Your Thal" min="0" max="3" step="1" style="margin-left: 5px;"> 
+                    <br>
+                    </div>      
+                    <input type="submit" value="Submit" id="bt" style="margin-top: 65px;">
+                </form>
+                <br>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="result" id="result">
+    <div class="container">
+        <h2 class="title" style="color: rgb(0, 0, 0);"> PREDICTION RESULT</h2>     
+           
+        <br>
+        <br>
+        {% if res1 and res2 %}
+                <p style="color:rgb(0, 0, 0);font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">{{ res1 }}</p>
+                <p style="color:rgb(0, 0, 0);font-weight: bold;text-shadow:1px 0px 2px black,1px 0px 3px white;">{{ res2 }}</p>
+                {% endif %}
+        <br>
+        <br>
+    </div>
+    </section>
+
+
+
+    <!-- services -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">User-Friendly Interface</div>
+                        <p>Provides an intuitive web interface for users to input their health parameters.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Responsive Design</div>
+                        <p>Ensures a seamless experience across various devices, including desktops, tablets, and smartphones. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Educational Resources</div>
+                        <p>Offers information about heart disease, risk factors, and preventative measures. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Hospitals</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Apollo Hospitals</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5674467406798!2d80.24896257484303!3d13.063182387260657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52666accdfbb59%3A0x2e0d1b10a5e06d2f!2sApollo%20Hospital%20Chennai!5e0!3m2!1sen!2sin!4v1712407592804!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Apollo Heart Center</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5674467406798!2d80.24896257484303!3d13.063182387260657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52666aca94388b%3A0x552ea74a94edf33!2sApollo%20Heart%20Centre!5e0!3m2!1sen!2sin!4v1712407969109!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Medway Heart Institute</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5674467406798!2d80.24896257484303!3d13.063182387260657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52677515e52f07%3A0xad3991df57d333ca!2sMedway%20Heart%20Institute%20-%20Best%20Heart%20Hospital%20in%20Chennai!5e0!3m2!1sen!2sin!4v1712408004826!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Saravana Heart Center</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7294868095455!2d80.23151169678955!3d13.052883199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52665eb62eb833%3A0xaddb3ad57c5eaeed!2sSaravana%20Heart%20Hospital!5e0!3m2!1sen!2sin!4v1712408104742!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">AVS Cardiac Center</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.587365356103!2d80.26956949678954!3d13.061916800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b9373afded%3A0x3cc67f1c99723af9!2sAVS%20CARDIAC%20CENTER!5e0!3m2!1sen!2sin!4v1712409354595!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Heal Your Heart</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.613295062752!2d80.26101989678953!3d13.06026910000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526624e4cb0c57%3A0x86d12b8e428ecddb!2sHeal%20Your%20Heart%20Royapettah!5e0!3m2!1sen!2sin!4v1712409463426!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">SPC Cardiac Center</div>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5674467406798!2d80.24896257484303!3d13.063182387260657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52666accdfbb59%3A0x2e0d1b10a5e06d2f!2sApollo%20Hospital%20Chennai!5e0!3m2!1sen!2sin!4v1712407592804!5m2!1sen!2sin"
+                                width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                        <a>Emergency no: 102</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to ask anything. If you have any suggestions, please let me know. Your suggestions are highly appreciated. I appreciate your time and try hard to reply to every single message posted here! Keep dropping your priceless opinions.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Selvam M S</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">selvamms150505@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class='bx bxs-phone'></i>
+                            <div class="info">
+                                <div class="head">Mobile</div>
+                                <div class="sub-title">+91 8015213825</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class='bx bxl-linkedin-square'></i>
+                            <div class="info">
+                                <div class="head">Linkedin</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/selvam-m-s-265668257">SELVAM M S</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class='bx bxl-github' ></i>
+                            <div class="info">
+                                <div class="head">GitHub</div>
+                                <div class="sub-title"><a href="https://github.com/selvam15">SELVAM M S</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="https://formspree.io/f/mayrdebq" method="POST" id="contact-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" name="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." name="Message" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    
+
+    <!-- footer -->
+    <footer>
+        <span>Created By <a href="#">Selvam M S</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

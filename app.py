@@ -6,7 +6,7 @@ import requests
 
 app = Flask(__name__)
 
-heart_data = pd.read_csv(r'C:\Users\veera\OneDrive\Desktop\website\Heartsync-main\heart_disease_data.csv')
+heart_data = pd.read_csv(r'\heart_disease_data.csv')
 
 # Splitting the Features and Target
 X = heart_data.drop(columns='target', axis=1)
